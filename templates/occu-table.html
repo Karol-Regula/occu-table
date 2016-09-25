@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>
+      <center>
+	Your random occupation for today is: <br>
+      </center>
+    </h1>
+    <h2>
+      <center>
+	{{occupationName}} <br>
+      </center>
+    </h2>
+  </head>
+  <body>
+    <br><br><br>
+    <table style="width:100%">
+      <tr>
+	<th>Job Name</th>
+	<th>Percentage Occurance</th> 
+	<th>Helpful Link</th>
+      </tr>
+      {% for key, value in jobList.iteritems() %}
+      <tr>
+        <td> {{ key }} </td>
+	<td><center> {{ value }}% </center></td>
+	<td><center> Link! </center></td>
+      </tr>
+      {% endfor %}
+    </table>
+    
+  </body>
+</html>
