@@ -16,15 +16,15 @@
     <br><br><br>
     <table style="width:100%">
       <tr>
-	<th>Job Name</th>
+	<th align = "left">Job Name</th>
 	<th>Percentage Occurance</th> 
-	<th>Helpful Link</th>
+	<th align = "left">Helpful Link</th>
       </tr>
       {% for key, value in jobList.iteritems() %}
       <tr>
         <td> {{ key }} </td>
 	<td><center> {{ value }}% </center></td>
-	<td><center> Link! </center></td>
+	<td> <a href = "https://google.com"> {{key}}</a> </td>
       </tr>
       {% endfor %}
     </table>
